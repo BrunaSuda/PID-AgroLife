@@ -4,28 +4,26 @@
   align-items: center;
   padding: 10px;
   color: white;
+  justify-content: cen; /* Alinha o conteúdo à esquerda */
 }
 
 .nav-item {
-  margin-right: 100px;
+  margin-right: 40px; /* Reduzido para espaçar os itens entre si */
+  margin-left: 20px;  /* Adiciona espaçamento à esquerda do item */
   font-size: 20px;
   font-family: Arial, sans-serif;
   position: relative;
   cursor: pointer;
-  transition: color 0.3s ease, background-color 0.3s ease; /* Animação suave */
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
-
-/* Efeito de hover no item do navbar 
-.nav-item:hover {
-  color: #000000; /* Mudar a cor do texto para preto 
-  background-color: #d3d3d3; /* Mudar o fundo para cinza claro 
-}*/
 
 .nav-item:hover .dropdown {
   display: block;
 }
 
 .dropdown {
+  font-size: 15px;
+  font-family: Arial, sans-serif;
   display: none;
   position: absolute;
   top: 100%;
@@ -44,13 +42,13 @@
   color: black;
 }
 
-/* Efeito de hover nos itens do dropdown */
 .dropdown a:hover {
   background-color: lightgray;
 }
 
+/* Ajustando o tamanho e posição do ícone da casa */
 .home-icon {
-  width: 30px;  /* Ajuste o tamanho da imagem conforme necessário */
+  width: 30px;
   height: auto;
   margin-right: 10px;
 }

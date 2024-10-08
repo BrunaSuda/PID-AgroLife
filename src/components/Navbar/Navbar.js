@@ -1,5 +1,3 @@
-// src/components/Navbar/Navbar.js
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
@@ -8,11 +6,11 @@ import houseIcon from '../../Assets/house-icon.png'; // Importa a nova imagem de
 function Navbar() {
   return (
     <nav className="navbar">
+      {/* Ícone da casa agora é clicável e redireciona para a home */}
       <div className="nav-item">
-        {/* Substitui o ícone da casa pela nova imagem */}
-        <img src={houseIcon} alt="Home" className="home-icon" />
-        <input type="text" placeholder="Pesquisar..." />
-        <button>🔍</button>
+        <Link to="/">
+          <img src={houseIcon} alt="Home" className="home-icon" />
+        </Link>
       </div>
 
       <div className="nav-item">

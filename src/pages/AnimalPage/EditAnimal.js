@@ -1,9 +1,15 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom'; // Importe o useNavigate
 import './EditAnimal.css';
 
 function EditAnimal() {
   const { id } = useParams(); // Pega o ID do animal a partir da URL
+  const navigate = useNavigate(); // Utilize o hook useNavigate para redirecionar
+
+  // Função para redirecionar o usuário para a página de listagem de animais
+  const handleCancelClick = () => {
+    navigate('/animal'); // Redireciona para a página de listagem de animais
+  };
 
   return (
     <div className="container-editar-animal">
@@ -60,8 +66,10 @@ function EditAnimal() {
         </div>
 
         <div className="acoes-edicao">
-          <button type="button" className="botao-cancelar">Cancel</button>
-          <button type="submit" className="botao-salvar">Save</button>
+          <button type="button" className="botao-cancelar" onClick={handleCancelClick}>
+            Cancelar
+          </button>
+          <button type="submit" className="botao-salvar">Salvar</button>
         </div>
       </form>
     </div>
