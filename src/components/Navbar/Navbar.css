@@ -1,0 +1,56 @@
+.navbar {
+  background-color: green;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: white;
+}
+
+.nav-item {
+  margin-right: 100px;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  position: relative;
+  cursor: pointer;
+  transition: color 0.3s ease, background-color 0.3s ease; /* Animação suave */
+}
+
+/* Efeito de hover no item do navbar 
+.nav-item:hover {
+  color: #000000; /* Mudar a cor do texto para preto 
+  background-color: #d3d3d3; /* Mudar o fundo para cinza claro 
+}*/
+
+.nav-item:hover .dropdown {
+  display: block;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  color: black;
+  min-width: 150px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown a {
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+  color: black;
+}
+
+/* Efeito de hover nos itens do dropdown */
+.dropdown a:hover {
+  background-color: lightgray;
+}
+
+.home-icon {
+  width: 30px;  /* Ajuste o tamanho da imagem conforme necessário */
+  height: auto;
+  margin-right: 10px;
+}
