@@ -1,4 +1,4 @@
-.container-pagina-animal {
+.container-pagina-identificacao {
   padding: 20px;
 }
 
@@ -7,7 +7,7 @@ h1 {
   margin-bottom: 20px;
 }
 
-.acoes-animal {
+.acoes-identificacao {
   display: flex;
   align-items: center;
   gap: 5px; /* Define a distância entre os botões */
@@ -85,24 +85,24 @@ h1 {
   cursor: pointer;
 }
 
-.tabela-animal {
+.tabela-identificacao {
   width: 100%;
   border-collapse: collapse;
 }
 
-.tabela-animal th,
-.tabela-animal td {
+.tabela-identificacao th,
+.tabela-identificacao td {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
 }
 
-.tabela-animal th {
+.tabela-identificacao th {
   background-color: #f2f2f2;
   font-weight: bold;
 }
 
-.tabela-animal td {
+.tabela-identificacao td {
   font-size: 14px;
 }
 
